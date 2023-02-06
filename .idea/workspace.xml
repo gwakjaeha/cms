@@ -4,49 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="044e2c13-dab0-46da-9e6b-ed81d8f98ec7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/UserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/application/SignInApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/application/SignUpApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/client/MailgunClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/client/mailgun/SendMailForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/config/FeignConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/config/JwtConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/config/filter/CustomerFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/controller/SignInController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/controller/SignUpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/domain/SignInForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/domain/SignUpForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/domain/customer/CustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/domain/model/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/domain/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/domain/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/exception/CustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/exception/ErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/exception/ExceptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/service/SignUpCustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/test/java/com/zerobase/user/service/SignUpCustomerServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zerobase-domain/src/main/java/com/zerobase/domain/common/UserType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zerobase-domain/src/main/java/com/zerobase/domain/common/UserVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zerobase-domain/src/main/java/com/zerobase/domain/config/JwtAuthenticationProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zerobase-domain/src/main/java/com/zerobase/domain/util/Aes256Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zerobase-domain/src/test/java/com/zerobase/domain/util/Aes256UtilTest.java" afterDir="false" />
+    <list default="true" id="044e2c13-dab0-46da-9e6b-ed81d8f98ec7" name="Changes" comment="feat: 회원가입 및 로그인 구현&#10;&#10;mailgun 을 통한 이메일 인증 및 JWT 토큰 활용하여 로그인 구현">
+      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/controller/SellerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/domain/model/Seller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/domain/repository/SellerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/service/seller/SellerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/application/SignInApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/application/SignInApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/application/SignUpApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/application/SignUpApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/config/filter/CustomerFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/config/filter/CustomerFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/controller/SignInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/controller/SignInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/controller/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/service/customer/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/service/SignUpCustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/service/customer/SignUpCustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -136,8 +109,16 @@
       <option name="presentableId" value="Default" />
       <updated>1675606643619</updated>
       <workItem from="1675606644700" duration="4568000" />
-      <workItem from="1675671269482" duration="3520000" />
+      <workItem from="1675671269482" duration="10162000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: 회원가입 및 로그인 구현&#10;&#10;mailgun 을 통한 이메일 인증 및 JWT 토큰 활용하여 로그인 구현">
+      <created>1675674880503</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675674880503</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,5 +134,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 회원가입 및 로그인 구현&#10;&#10;mailgun 을 통한 이메일 인증 및 JWT 토큰 활용하여 로그인 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 회원가입 및 로그인 구현&#10;&#10;mailgun 을 통한 이메일 인증 및 JWT 토큰 활용하여 로그인 구현" />
   </component>
 </project>
