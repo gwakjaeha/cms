@@ -8,9 +8,9 @@ import com.zerobase.user.exception.ErrorCode;
 import java.time.LocalDateTime;
 import java.util.Locale;
 import java.util.Optional;
-import javax.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
