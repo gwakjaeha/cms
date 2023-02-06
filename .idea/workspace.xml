@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="044e2c13-dab0-46da-9e6b-ed81d8f98ec7" name="Changes" comment="feat: 셀러 회원가입 및 로그인 구현&#10;&#10;고객과 동일하게 셀러에 대한 회원가입 및 로그인 구현">
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/domain/customer/ChangeBalanceForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/domain/model/CustomerBalanceHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/domain/repository/CustomerBalanceHistoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/service/customer/CustomerBalanceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/domain/customer/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/domain/customer/CustomerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/domain/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/domain/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/exception/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/exception/ErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/service/customer/SignUpCustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/service/customer/SignUpCustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/service/seller/SellerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/service/seller/SellerService.java" afterDir="false" />
+    <list default="true" id="044e2c13-dab0-46da-9e6b-ed81d8f98ec7" name="Changes" comment="feat: 예치금 관리 기능 추가">
+      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/config/filter/SellerFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675606643619</updated>
       <workItem from="1675606644700" duration="4568000" />
-      <workItem from="1675671269482" duration="14569000" />
+      <workItem from="1675671269482" duration="14901000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 회원가입 및 로그인 구현&#10;&#10;mailgun 을 통한 이메일 인증 및 JWT 토큰 활용하여 로그인 구현">
       <created>1675674880503</created>
@@ -122,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675689087749</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: 예치금 관리 기능 추가">
+      <created>1675696992242</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675696992242</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +139,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: 회원가입 및 로그인 구현&#10;&#10;mailgun 을 통한 이메일 인증 및 JWT 토큰 활용하여 로그인 구현" />
     <MESSAGE value="feat: 셀러 회원가입 및 로그인 구현&#10;&#10;고객과 동일하게 셀러에 대한 회원가입 및 로그인 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 셀러 회원가입 및 로그인 구현&#10;&#10;고객과 동일하게 셀러에 대한 회원가입 및 로그인 구현" />
+    <MESSAGE value="feat: 예치금 관리 기능 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 예치금 관리 기능 추가" />
   </component>
 </project>
