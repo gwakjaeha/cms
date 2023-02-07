@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="044e2c13-dab0-46da-9e6b-ed81d8f98ec7" name="Changes" comment="feat: 예치금 관리 기능 추가">
-      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/config/filter/SellerFilter.java" afterDir="false" />
+    <list default="true" id="044e2c13-dab0-46da-9e6b-ed81d8f98ec7" name="Changes" comment="feat: 셀러 token filter 추가">
+      <change afterPath="$PROJECT_DIR$/user-api/scratch_user.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/controller/SignInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/com/zerobase/user/controller/SignInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,27 +41,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/gwakjaeha/Desktop/제로베이스/intellij/cms/user-api/src/main/resources",
-    "spring.configuration.checksum": "937e101105333206cd321dc23fb9f854"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/gwakjaeha/Desktop/제로베이스/intellij/cms/user-api/src/main/resources&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;937e101105333206cd321dc23fb9f854&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/user-api/src/main/resources" />
@@ -73,12 +76,28 @@
       <recent name="com.zerobase.user.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zerobase.user.config.filter" />
       <recent name="com.example.cms.service" />
       <recent name="com.example.cms.client.service" />
       <recent name="util" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.UserApplication">
+    <configuration name="scratch_user | 회원 정보 조회(고객)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/user-api/scratch_user.http" index="4" requestIdentifier="회원 정보 조회(고객)" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_user | 이메일 인증(고객)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/user-api/scratch_user.http" index="2" requestIdentifier="이메일 인증(고객)" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_user | 잔액 변경(고객)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/user-api/scratch_user.http" index="5" requestIdentifier="잔액 변경(고객)" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_user | 회원가입(고객)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/user-api/scratch_user.http" requestIdentifier="회원가입(고객)" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_user | 로그인(고객)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/user-api/scratch_user.http" index="3" requestIdentifier="로그인(고객)" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cms.user-api.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zerobase.user.UserApplication" />
@@ -86,6 +105,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.scratch_user | 회원 정보 조회(고객)" />
+        <item itemvalue="HTTP Request.scratch_user | 잔액 변경(고객)" />
+        <item itemvalue="HTTP Request.scratch_user | 로그인(고객)" />
+        <item itemvalue="HTTP Request.scratch_user | 이메일 인증(고객)" />
+        <item itemvalue="HTTP Request.scratch_user | 회원가입(고객)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -96,7 +124,8 @@
       <option name="presentableId" value="Default" />
       <updated>1675606643619</updated>
       <workItem from="1675606644700" duration="4568000" />
-      <workItem from="1675671269482" duration="14901000" />
+      <workItem from="1675671269482" duration="15157000" />
+      <workItem from="1675726633531" duration="1436000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 회원가입 및 로그인 구현&#10;&#10;mailgun 을 통한 이메일 인증 및 JWT 토큰 활용하여 로그인 구현">
       <created>1675674880503</created>
@@ -119,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675696992242</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: 셀러 token filter 추가">
+      <created>1675697144467</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675697144467</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +176,7 @@
     <MESSAGE value="feat: 회원가입 및 로그인 구현&#10;&#10;mailgun 을 통한 이메일 인증 및 JWT 토큰 활용하여 로그인 구현" />
     <MESSAGE value="feat: 셀러 회원가입 및 로그인 구현&#10;&#10;고객과 동일하게 셀러에 대한 회원가입 및 로그인 구현" />
     <MESSAGE value="feat: 예치금 관리 기능 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 예치금 관리 기능 추가" />
+    <MESSAGE value="feat: 셀러 token filter 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 셀러 token filter 추가" />
   </component>
 </project>

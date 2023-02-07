@@ -1,0 +1,62 @@
+### 회원가입(고객)
+POST http://localhost:8081/signup/customer
+Content-Type: application/json
+
+{
+  "birth": "1992-07-18",
+  "email": "kjh19920718@gmail.com",
+  "name": "jaeha",
+  "password": "pw",
+  "phone": "01000000000"
+}
+
+### 이메일 인증(고객)
+GET http://localhost:8081/signup/customer/verify?email=kjh19920718@gmail.com&code=TybHRx5glI
+
+### 로그인(고객)
+POST http://localhost:8081/signin/customer
+Content-Type: application/json
+
+{
+  "email": "kjh19920718@gmail.com",
+  "password": "pw"
+}
+
+### 회원 정보 조회(고객)
+GET http://localhost:8081/customer/getInfo
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoTG0vdGs1aVlpbEJXTmkreitob0gwL0x1a0VWam5YTllOTUt2Q2RIZ293PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NzU3Mjc5OTQsImV4cCI6MTY3NTgxNDM5NH0.rctFgcfqnCp27Nm_7q78ofLvudq1ESCAVxuYc3A2kQM
+
+### 잔액 변경(고객)
+POST http://localhost:8081/customer/balance
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoTG0vdGs1aVlpbEJXTmkreitob0gwL0x1a0VWam5YTllOTUt2Q2RIZ293PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NzU3Mjc5OTQsImV4cCI6MTY3NTgxNDM5NH0.rctFgcfqnCp27Nm_7q78ofLvudq1ESCAVxuYc3A2kQM
+
+{
+  "from": "kjh19920718@gmail.com",
+  "message": "돈 충전",
+  "money": 50000
+}
+
+##############################
+
+### 회원가입(셀러)
+POST http://localhost:8081/signup/seller
+Content-Type: application/json
+
+{
+  "birth": "1992-07-18",
+  "email": "gwakjaeha@naver.com",
+  "name": "jaeha",
+  "password": "pw",
+  "phone": "01000000000"
+}
+
+### 로그인(셀러)
+POST http://localhost:8081/signin/seller
+Content-Type: application/json
+
+{
+  "email": "kjh19920718@gmail.com",
+  "password": "pw"
+}
