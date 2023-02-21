@@ -4,35 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="044e2c13-dab0-46da-9e6b-ed81d8f98ec7" name="Changes" comment="scratch: 테스트용 scratch 작성 및 API 컨벤션 변경">
-      <change afterPath="$PROJECT_DIR$/order-api/scratch_order.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/ZeroOrderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/config/JwtConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/controller/SellerProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/model/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/model/ProductItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/product/AddProductForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/product/AddProductItemForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/product/ProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/product/ProductItemDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/product/UpdateProductForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/product/UpdateProductItemForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/repository/ProductItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/exception/ApiExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/exception/CustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/exception/ErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/service/ProductItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/service/ProductService.java" afterDir="false" />
+    <list default="true" id="044e2c13-dab0-46da-9e6b-ed81d8f98ec7" name="Changes" comment="feat: 상품 및 아이템 CUD API 구현">
+      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/config/QueryDslConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/repository/ProductRepositoryCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/repository/ProductRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/service/ProductSearchService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/order-api/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/test/java/com/zerobase/cms/order/service/ProductServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-api/scratch_user.http" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/scratch_user.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-api/scratch_order.http" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/scratch_order.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/product/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/product/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/repository/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,12 +27,50 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/order-api">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cms" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cms" type="f1a62948:ProjectNode" />
+                <item name="order-api" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cms" type="f1a62948:ProjectNode" />
+                <item name="order-api" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cms" type="f1a62948:ProjectNode" />
+                <item name="order-api" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -88,6 +108,9 @@
     ]
   }
 }</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/user-api/src/main/resources" />
@@ -111,13 +134,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ZeroOrderApplication">
-    <configuration name="scratch_order | 상품 아이템 삭제" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="6" requestIdentifier="상품 아이템 삭제" runType="Run single request">
+    <configuration name="scratch_order | 상품 디테일 검색" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="8" requestIdentifier="상품 디테일 검색" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="scratch_order | 상품 아이템 수정" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="4" requestIdentifier="상품 아이템 수정" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="scratch_order | 상품 수정" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="3" requestIdentifier="상품 수정" runType="Run single request">
+    <configuration name="scratch_order | 상품 아이템 추가" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="2" requestIdentifier="상품 아이템 추가" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_order | 상품 검색" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="7" requestIdentifier="상품 검색" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_order | 상품 추가" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" requestIdentifier="상품 추가" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="scratch_order | 상품 추가" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" requestIdentifier="상품 추가" runType="Run single request">
@@ -132,7 +161,7 @@
     <configuration name="scratch_order | 상품 아이템 추가" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="2" requestIdentifier="상품 아이템 추가" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="scratch_user | 로그인(고객)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/user-api/scratch_user.http" index="3" requestIdentifier="로그인(고객)" runType="Run single request">
+    <configuration name="scratch_user | 로그인(셀러)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/user-api/scratch_user.http" index="7" requestIdentifier="로그인(셀러)" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -151,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.scratch_order | 상품 삭제" />
-        <item itemvalue="HTTP Request.scratch_order | 상품 아이템 삭제" />
-        <item itemvalue="HTTP Request.scratch_order | 상품 아이템 추가" />
+        <item itemvalue="HTTP Request.scratch_order | 상품 디테일 검색" />
+        <item itemvalue="HTTP Request.scratch_order | 상품 검색" />
         <item itemvalue="HTTP Request.scratch_order | 상품 추가" />
-        <item itemvalue="HTTP Request.scratch_order | 상품 수정" />
+        <item itemvalue="HTTP Request.scratch_order | 상품 아이템 추가" />
+        <item itemvalue="HTTP Request.scratch_user | 로그인(셀러)" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +206,8 @@
       <workItem from="1676623664847" duration="736000" />
       <workItem from="1676718238107" duration="6311000" />
       <workItem from="1676782118068" duration="9976000" />
-      <workItem from="1676817646277" duration="1205000" />
+      <workItem from="1676817646277" duration="1469000" />
+      <workItem from="1676942008997" duration="2685000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 회원가입 및 로그인 구현&#10;&#10;mailgun 을 통한 이메일 인증 및 JWT 토큰 활용하여 로그인 구현">
       <created>1675674880503</created>
@@ -214,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675728407987</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: 상품 및 아이템 CUD API 구현">
+      <created>1676818957611</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676818957611</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +274,7 @@
     <MESSAGE value="feat: 예치금 관리 기능 추가" />
     <MESSAGE value="feat: 셀러 token filter 추가" />
     <MESSAGE value="scratch: 테스트용 scratch 작성 및 API 컨벤션 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="scratch: 테스트용 scratch 작성 및 API 컨벤션 변경" />
+    <MESSAGE value="feat: 상품 및 아이템 CUD API 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 상품 및 아이템 CUD API 구현" />
   </component>
 </project>
