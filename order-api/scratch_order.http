@@ -1,7 +1,7 @@
 ### 상품 추가
 POST http://localhost:8082/seller/product
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnMEhoUmhSMGxMVC8vZ1NxcFp0TnFvdmdySkRURHp3T3J3ZUk2MWVVSGF3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjc2OTQ0NDYxLCJleHAiOjE2NzcwMzA4NjF9.ri5uoSLdseVBQQ0MOha2tQQxEbzl89VFZMGmQxV1Wzk
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoTG0vdGs1aVlpbEJXTmkreitob0gwL0x1a0VWam5YTllOTUt2Q2RIZ293PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NzcxNjMyOTQsImV4cCI6MTY3NzI0OTY5NH0.UazuS3s-5G01znEdFj13zSa3s7NZW2zbzeypy5hY8-s
 
 {
   "description": "상품 설명",
@@ -18,7 +18,7 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnMEhoUmhSMGxMVC8vZ1NxcFp0TnFvdmdyS
 ### 상품 아이템 추가
 POST http://localhost:8082/seller/product/item
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnMEhoUmhSMGxMVC8vZ1NxcFp0TnFvdmdySkRURHp3T3J3ZUk2MWVVSGF3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjc2OTQ0NDYxLCJleHAiOjE2NzcwMzA4NjF9.ri5uoSLdseVBQQ0MOha2tQQxEbzl89VFZMGmQxV1Wzk
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoTG0vdGs1aVlpbEJXTmkreitob0gwL0x1a0VWam5YTllOTUt2Q2RIZ293PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NzcxNjMyOTQsImV4cCI6MTY3NzI0OTY5NH0.UazuS3s-5G01znEdFj13zSa3s7NZW2zbzeypy5hY8-s
 
 {
   "productId": 1,
@@ -76,3 +76,23 @@ Content-Type: application/json
 GET http://localhost:8082/search/product/detail?productId=2
 Content-Type: application/json
 X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnMEhoUmhSMGxMVC8vZ1NxcFp0TnFvdmdySkRURHp3T3J3ZUk2MWVVSGF3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjc2OTQ0NDYxLCJleHAiOjE2NzcwMzA4NjF9.ri5uoSLdseVBQQ0MOha2tQQxEbzl89VFZMGmQxV1Wzk
+
+### 카트 추가
+POST http://localhost:8082/customer/cart
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoTG0vdGs1aVlpbEJXTmkreitob0gwL0x1a0VWam5YTllOTUt2Q2RIZ293PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NzcxNjMyOTQsImV4cCI6MTY3NzI0OTY5NH0.UazuS3s-5G01znEdFj13zSa3s7NZW2zbzeypy5hY8-s
+
+{
+  "description": "상품 설명",
+  "id": 1,
+  "items": [
+    {
+      "count": 1,
+      "id": 1,
+      "name": "270",
+      "price": 100000
+    }
+  ],
+  "name": "나이키 에어포스2",
+  "sellerId": 1
+}

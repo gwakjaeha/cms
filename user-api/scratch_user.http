@@ -11,7 +11,7 @@ Content-Type: application/json
 }
 
 ### 이메일 인증(고객)
-GET http://localhost:8081/signup/customer/verify?email=kjh19920718@gmail.com&code=TybHRx5glI
+GET http://localhost:8081/signup/customer/verify?email=kjh19920718@gmail.com&code=Xlx2FDBmAo
 
 ### 로그인(고객)
 POST http://localhost:8081/signin/customer
