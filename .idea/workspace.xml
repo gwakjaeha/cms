@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="044e2c13-dab0-46da-9e6b-ed81d8f98ec7" name="Changes" comment="feat: 카트에 대한 추가 구현">
+    <list default="true" id="044e2c13-dab0-46da-9e6b-ed81d8f98ec7" name="Changes" comment="feat: 카트 보기&#10;- 가격 / 수량 / 아이템 변경에 따른 대응">
       <change afterPath="$PROJECT_DIR$/order-api/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/test/java/com/zerobase/cms/order/application/CartApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-api/src/test/java/com/zerobase/cms/order/config/TestRedisConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/application/CartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/application/CartApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/controller/CustomerCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/controller/CustomerCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/redis/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/redis/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/domain/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/service/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/service/ProductSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/service/ProductSearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-api/src/test/java/com/zerobase/cms/order/service/ProductServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/test/java/com/zerobase/cms/order/service/ProductServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,9 +198,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="scratch_order | 상품 디테일 검색" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="8" requestIdentifier="상품 디테일 검색" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <configuration name="scratch_order | 상품 검색" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="7" requestIdentifier="상품 검색" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -227,6 +217,9 @@
       <method v="2" />
     </configuration>
     <configuration name="scratch_order | 카트 추가" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="9" requestIdentifier="카트 추가" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_order | 상품 디테일 검색" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="8" requestIdentifier="상품 디테일 검색" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="scratch_user | 이메일 인증(고객)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/user-api/scratch_user.http" index="2" requestIdentifier="이메일 인증(고객)" runType="Run single request">
@@ -289,7 +282,8 @@
       <workItem from="1677224002198" duration="4441000" />
       <workItem from="1677229719154" duration="61000" />
       <workItem from="1677300373422" duration="3051000" />
-      <workItem from="1677308996012" duration="3799000" />
+      <workItem from="1677308996012" duration="4559000" />
+      <workItem from="1677317620855" duration="303000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 회원가입 및 로그인 구현&#10;&#10;mailgun 을 통한 이메일 인증 및 JWT 토큰 활용하여 로그인 구현">
       <created>1675674880503</created>
@@ -347,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677164673143</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: 카트 보기&#10;- 가격 / 수량 / 아이템 변경에 따른 대응">
+      <created>1677312934460</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677312934460</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,6 +374,7 @@
     <MESSAGE value="feat: 상품 및 아이템 CUD API 구현" />
     <MESSAGE value="feat: 상품 및 디테일 검색 API 추가" />
     <MESSAGE value="feat: 카트에 대한 추가 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 카트에 대한 추가 구현" />
+    <MESSAGE value="feat: 카트 보기&#10;- 가격 / 수량 / 아이템 변경에 따른 대응" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 카트 보기&#10;- 가격 / 수량 / 아이템 변경에 따른 대응" />
   </component>
 </project>
