@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="044e2c13-dab0-46da-9e6b-ed81d8f98ec7" name="Changes" comment="feat: 카트 보기&#10;- 가격 / 수량 / 아이템 변경에 따른 대응">
+    <list default="true" id="044e2c13-dab0-46da-9e6b-ed81d8f98ec7" name="Changes" comment="feat: 카트 업데이트&#10;- 카트 조회 로직을 재사용하여 코드 생산성을 높였음">
+      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/application/OrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/client/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/client/user/ChangeBalanceForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/client/user/CustomerDto.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/order-api/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-api/scratch_order.http" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/scratch_order.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/application/CartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/application/CartApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/controller/CustomerCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/controller/CustomerCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/exception/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/exception/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/service/ProductItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/service/ProductItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-api/scratch_user.http" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/scratch_user.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,8 +71,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -92,7 +100,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/gwakjaeha/Desktop/제로베이스/intellij/cms/user-api/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/gwakjaeha/Desktop/제로베이스/intellij/cms/order-api/src/main/java/com/zerobase/cms/order/client/user&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;65f4ade85902970be2a8b0ae716637b3&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -107,6 +115,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/client/user" />
       <recent name="$PROJECT_DIR$/user-api/src/main/resources" />
       <recent name="$PROJECT_DIR$/zerobase-domain/src/main/java/com/zerobase/domain" />
       <recent name="$PROJECT_DIR$" />
@@ -128,77 +137,20 @@
       <recent name="com.example.cms.client.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CartApplicationTest.ADD_TEST_MODIFY">
-    <configuration name="CartApplicationTest.ADD_AND_REFRESH_TEST" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":order-api:test" />
-            <option value="--tests" />
-            <option value="&quot;com.zerobase.cms.order.application.CartApplicationTest.ADD_AND_REFRESH_TEST&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+  <component name="RunManager" selected="Spring Boot.ZeroOrderApplication">
+    <configuration name="scratch_order | 상품 아이템 추가" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="2" requestIdentifier="상품 아이템 추가" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="CartApplicationTest.ADD_TEST" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":order-api:test" />
-            <option value="--tests" />
-            <option value="&quot;com.zerobase.cms.order.application.CartApplicationTest.ADD_TEST&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+    <configuration name="scratch_order | 카트 주문" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="11" requestIdentifier="카트 주문" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="CartApplicationTest.ADD_TEST_MODIFY" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":order-api:test" />
-            <option value="--tests" />
-            <option value="&quot;com.zerobase.cms.order.application.CartApplicationTest.ADD_TEST_MODIFY&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+    <configuration name="scratch_order | 카트 조회" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="10" requestIdentifier="카트 조회" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="scratch_order | 상품 검색" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="7" requestIdentifier="상품 검색" runType="Run single request">
+    <configuration name="scratch_order | 카트 추가" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="9" requestIdentifier="카트 추가" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_order | 카트 조회" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="10" requestIdentifier="카트 조회" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="scratch_order | 상품 추가" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" requestIdentifier="상품 추가" runType="Run single request">
@@ -219,13 +171,10 @@
     <configuration name="scratch_order | 카트 추가" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="9" requestIdentifier="카트 추가" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="scratch_order | 상품 디테일 검색" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="8" requestIdentifier="상품 디테일 검색" runType="Run single request">
+    <configuration name="scratch_order | 카트 추가" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/order-api/scratch_order.http" index="9" requestIdentifier="카트 추가" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="scratch_user | 이메일 인증(고객)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/user-api/scratch_user.http" index="2" requestIdentifier="이메일 인증(고객)" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="scratch_user | 로그인(고객)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/user-api/scratch_user.http" index="3" requestIdentifier="로그인(고객)" runType="Run single request">
+    <configuration name="scratch_user | 잔액 변경(고객)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/user-api/scratch_user.http" index="5" requestIdentifier="잔액 변경(고객)" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="scratch_user | 회원가입(고객)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/user-api/scratch_user.http" requestIdentifier="회원가입(고객)" runType="Run single request">
@@ -247,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CartApplicationTest.ADD_TEST_MODIFY" />
-        <item itemvalue="Gradle.CartApplicationTest.ADD_TEST" />
-        <item itemvalue="Gradle.CartApplicationTest.ADD_AND_REFRESH_TEST" />
-        <item itemvalue="HTTP Request.scratch_user | 이메일 인증(고객)" />
-        <item itemvalue="HTTP Request.scratch_order | 상품 검색" />
+        <item itemvalue="HTTP Request.scratch_order | 카트 주문" />
+        <item itemvalue="HTTP Request.scratch_user | 잔액 변경(고객)" />
+        <item itemvalue="HTTP Request.scratch_order | 카트 조회" />
+        <item itemvalue="HTTP Request.scratch_order | 카트 추가" />
+        <item itemvalue="HTTP Request.scratch_order | 상품 아이템 추가" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +232,8 @@
       <workItem from="1677229719154" duration="61000" />
       <workItem from="1677300373422" duration="3051000" />
       <workItem from="1677308996012" duration="4559000" />
-      <workItem from="1677317620855" duration="303000" />
+      <workItem from="1677317620855" duration="6720000" />
+      <workItem from="1677328339015" duration="931000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 회원가입 및 로그인 구현&#10;&#10;mailgun 을 통한 이메일 인증 및 JWT 토큰 활용하여 로그인 구현">
       <created>1675674880503</created>
@@ -348,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677312934460</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: 카트 업데이트&#10;- 카트 조회 로직을 재사용하여 코드 생산성을 높였음">
+      <created>1677318125080</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677318125080</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,6 +332,18 @@
     <MESSAGE value="feat: 상품 및 디테일 검색 API 추가" />
     <MESSAGE value="feat: 카트에 대한 추가 구현" />
     <MESSAGE value="feat: 카트 보기&#10;- 가격 / 수량 / 아이템 변경에 따른 대응" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 카트 보기&#10;- 가격 / 수량 / 아이템 변경에 따른 대응" />
+    <MESSAGE value="feat: 카트 업데이트&#10;- 카트 조회 로직을 재사용하여 코드 생산성을 높였음" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 카트 업데이트&#10;- 카트 조회 로직을 재사용하여 코드 생산성을 높였음" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-api/src/main/java/com/zerobase/cms/order/client/UserClient.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
